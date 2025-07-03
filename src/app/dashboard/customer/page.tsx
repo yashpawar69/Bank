@@ -11,6 +11,7 @@ import type { Account, Transaction } from '@/lib/types';
 import { TransactionDialog } from '@/components/customer/TransactionDialog';
 import { cn } from '@/lib/utils';
 import { useToast } from '@/hooks/use-toast';
+import { format } from 'date-fns';
 
 export default function CustomerDashboardPage() {
   // We'll use the first account for this demo
@@ -83,7 +84,7 @@ export default function CustomerDashboardPage() {
                 <TableBody>
                   {account.transactions.map((tx) => (
                     <TableRow key={tx.id}>
-                      <TableCell className="font-medium">{new Date(tx.date).toLocaleDateString()}</TableCell>
+                      <TableCell className="font-medium">{format(new Date(tx.date.replace(/-/g, '/')), 'MM/dd/yyyy')}</TableCell>
                       <TableCell>{tx.description}</TableCell>
                       <TableCell className={cn(
                         'text-right font-semibold flex items-center justify-end gap-2',

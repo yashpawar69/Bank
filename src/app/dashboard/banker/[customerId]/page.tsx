@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button';
 import { accounts, customers } from '@/lib/mock-data';
 import { cn } from '@/lib/utils';
 import { ArrowLeft } from 'lucide-react';
+import { format } from 'date-fns';
 
 interface CustomerDetailsPageProps {
   params: {
@@ -69,7 +70,7 @@ export default function CustomerDetailsPage({ params }: CustomerDetailsPageProps
               <TableBody>
                 {account.transactions.map((tx) => (
                   <TableRow key={tx.id}>
-                    <TableCell className="font-medium">{new Date(tx.date).toLocaleDateString()}</TableCell>
+                    <TableCell className="font-medium">{format(new Date(tx.date.replace(/-/g, '/')), 'MM/dd/yyyy')}</TableCell>
                     <TableCell>{tx.description}</TableCell>
                     <TableCell>
                       <Badge variant={tx.type === 'Deposit' ? 'default' : 'secondary'} className={cn(tx.type === 'Deposit' ? 'bg-green-100 text-green-800 border-green-200' : 'bg-red-100 text-red-800 border-red-200')}>
