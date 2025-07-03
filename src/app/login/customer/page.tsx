@@ -27,6 +27,9 @@ export default function CustomerLoginPage() {
       console.log('Generated Dummy Token:', dummyToken);
       // In a real app, this token would be stored securely (e.g., in an HttpOnly cookie or secure storage)
       // and sent with subsequent API requests in the Authorization header.
+      if (typeof window !== 'undefined') {
+        sessionStorage.setItem('dummyToken', dummyToken);
+      }
       router.push('/dashboard/customer');
     } else {
       setError('Please enter both email and password.');
