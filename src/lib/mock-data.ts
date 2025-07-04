@@ -1,9 +1,9 @@
 import type { Customer, Account } from './types';
 
 export const customers: Customer[] = [
-  { id: '1', name: 'John Doe', email: 'john.doe@example.com', username: 'johndoe' },
-  { id: '2', name: 'Jane Smith', email: 'jane.smith@example.com', username: 'janesmith' },
-  { id: '3', name: 'Peter Jones', email: 'peter.jones@example.com', username: 'peterjones' },
+  { id: '1', name: 'Yash', email: 'yash@example.com', username: 'yash' },
+  { id: '2', name: 'Rahul', email: 'rahul@example.com', username: 'rahul' },
+  { id: '3', name: 'Akash', email: 'akash@example.com', username: 'akash' },
 ];
 
 export const accounts: Account[] = [
