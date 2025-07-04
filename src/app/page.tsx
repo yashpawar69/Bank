@@ -46,9 +46,6 @@ export default function Home() {
           </CardContent>
         </Card>
       </div>
-       <footer className="mt-16 text-center text-sm text-muted-foreground">
-        <p>&copy; {new Date().getFullYear()} Bank. All Rights Reserved.</p>
-      </footer>
     </main>
   );
 }
