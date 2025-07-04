@@ -8,12 +8,9 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-center p-8 bg-background">
       <div className="flex flex-col items-center text-center">
         <Landmark className="w-16 h-16 text-primary mb-4" />
-        <h1 className="text-5xl font-bold font-headline text-foreground mb-2">
+        <h1 className="text-5xl font-bold font-headline text-foreground mb-8">
           Welcome to Bank
         </h1>
-        <p className="text-lg text-muted-foreground mb-8 max-w-md">
-          Your trusted partner for simple and secure banking. Access your account or manage customers with ease.
-        </p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-4xl">
