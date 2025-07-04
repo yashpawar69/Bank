@@ -9,7 +9,7 @@ export default function Home() {
       <div className="flex flex-col items-center text-center">
         <Landmark className="w-16 h-16 text-primary mb-4" />
         <h1 className="text-5xl font-bold font-headline text-foreground mb-2">
-          Welcome to BankBook
+          Welcome to Bank
         </h1>
         <p className="text-lg text-muted-foreground mb-8 max-w-md">
           Your trusted partner for simple and secure banking. Access your account or manage customers with ease.
@@ -50,7 +50,7 @@ export default function Home() {
         </Card>
       </div>
        <footer className="mt-16 text-center text-sm text-muted-foreground">
-        <p>&copy; {new Date().getFullYear()} BankBook. All Rights Reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Bank. All Rights Reserved.</p>
       </footer>
     </main>
   );

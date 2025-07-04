@@ -14,7 +14,6 @@ import { useToast } from '@/hooks/use-toast';
 import { format } from 'date-fns';
 
 export default function CustomerDashboardPage() {
-  // We'll use the first account for this demo
   const [account, setAccount] = useState<Account>(mockAccounts[0]);
   const [dialogOpen, setDialogOpen] = useState(false);
   const [transactionType, setTransactionType] = useState<'Deposit' | 'Withdrawal'>('Deposit');

@@ -18,7 +18,6 @@ export function Header() {
   }, []);
 
   const handleLogout = () => {
-    // In a real app, this would also clear the auth token.
     if (typeof window !== 'undefined') {
       sessionStorage.removeItem('dummyToken');
     }
@@ -30,7 +29,7 @@ export function Header() {
       <div className="container flex h-14 items-center">
         <Link href="/" className="mr-6 flex items-center space-x-2">
           <Landmark className="h-6 w-6 text-primary" />
-          <span className="font-bold font-headline text-lg">BankBook</span>
+          <span className="font-bold font-headline text-lg">Bank</span>
         </Link>
         <div className="flex flex-1 items-center justify-end space-x-4">
           {token && (

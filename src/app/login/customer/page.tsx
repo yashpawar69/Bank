@@ -18,15 +18,9 @@ export default function CustomerLoginPage() {
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
     if (email && password) {
-      // In a real app, you'd call an API to authenticate the user
-      // and receive an access token.
-      // For this demo, we'll just redirect.
       console.log('Simulating login for:', email);
-      // Mocking successful login and generating a dummy token
       const dummyToken = Array.from({ length: 36 }, () => 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'.charAt(Math.floor(Math.random() * 62))).join('');
       console.log('Generated Dummy Token:', dummyToken);
-      // In a real app, this token would be stored securely (e.g., in an HttpOnly cookie or secure storage)
-      // and sent with subsequent API requests in the Authorization header.
       if (typeof window !== 'undefined') {
         sessionStorage.setItem('dummyToken', dummyToken);
       }

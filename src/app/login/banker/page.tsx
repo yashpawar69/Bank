@@ -18,7 +18,6 @@ export default function BankerLoginPage() {
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
     if (username && password) {
-      // Simulate banker authentication
       console.log('Simulating banker login for:', username);
       router.push('/dashboard/banker');
     } else {
