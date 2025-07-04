@@ -23,7 +23,6 @@ export default function BankerDashboardPage() {
       <Card>
         <CardHeader>
           <CardTitle className="font-headline text-2xl">Customer Accounts</CardTitle>
-          <CardDescription>Select a customer to view their detailed transaction history.</CardDescription>
         </CardHeader>
         <CardContent>
           <Table>
